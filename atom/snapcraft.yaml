@@ -33,6 +33,6 @@ parts:
       - unity-gtk2-module
   atom-copy:
     source: .
-    plugin: copy
-    files:
+    plugin: dump
+    organize:
       wrapper: bin/wrapper

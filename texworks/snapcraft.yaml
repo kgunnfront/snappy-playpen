@@ -14,8 +14,9 @@ apps:
 
 parts:
   texworks-launcher:
-    plugin: copy
-    files:
+    plugin: dump
+    source: .
+    organize:
       texworks-launcher: bin/texworks-launcher
   texworks:
     plugin: cmake

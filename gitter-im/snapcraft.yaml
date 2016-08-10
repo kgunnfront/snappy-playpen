@@ -14,13 +14,8 @@ parts:
     plugin: make
     stage-packages: [wget, dpkg]
   gitter:
-    plugin: copy
-    files:
-      locales: locales
-      Gitter: Gitter
-      nw.pak: nw.pak
-      icudtl.dat: icudtl.dat
-      libffmpegsumo.so: libffmpegsumo.so
+    plugin: dump
+    source: .
     stage-packages:
       - libgl1-mesa-glx
       - libnss3

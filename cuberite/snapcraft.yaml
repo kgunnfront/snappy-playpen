@@ -33,12 +33,12 @@ parts:
             - -lib
     release:
         after: [cuberite]
-        plugin: copy
+        plugin: dump
         source: parts/cuberite/src/Server
-        files:
+        organize:
             "*": "."
     wrapper:
-        plugin: copy
+        plugin: dump
         source: .
-        files:
+        organize:
             Cuberite.wrapper: bin/Cuberite.wrapper
