@@ -7,7 +7,7 @@ confinement: devmode
 apps:
   ubuntu-clock-app:
     command: clock
-    plugs: [unity7, opengl, network, network-bind]
+    plugs: [unity7, opengl, network, network-bind, mir]
 
 parts:
   clock:
